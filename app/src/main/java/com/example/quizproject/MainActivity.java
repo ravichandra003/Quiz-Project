@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Get card views
+        // Get card views using the correct IDs
         CardView natureCard = findViewById(R.id.card_nature);
         CardView scienceCard = findViewById(R.id.card_science);
         CardView computerScienceCard = findViewById(R.id.card_computerscience);
@@ -26,6 +26,6 @@ public class MainActivity extends AppCompatActivity {
     private void openQuizActivity(String subject) {
         Intent intent = new Intent(MainActivity.this, QuizActivity.class);
         intent.putExtra("subject", subject);
-        startActivity(intent);
+        startActivity(intent); // Launch QuizActivity
     }
 }
