@@ -1,12 +1,64 @@
+<!-- res/layout/activity_main.xml -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:background="#90EE90"> <!-- Light green background -->
 
-    <Button
-        android:id="@+id/startQuizButton"
-        android:layout_width="wrap_content"
+    <!-- Card for Nature -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_nature"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Start Quiz" />
+        android:layout_margin="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Nature"
+            android:textSize="20sp"
+            android:textColor="#000000" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card for Science -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_science"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@id/card_nature"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Science"
+            android:textSize="20sp"
+            android:textColor="#000000" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card for Computer Science -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_computerscience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@id/card_science"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Computer Science"
+            android:textSize="20sp"
+            android:textColor="#000000" />
+    </androidx.cardview.widget.CardView>
+
 </RelativeLayout>
